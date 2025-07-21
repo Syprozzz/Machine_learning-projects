@@ -38,14 +38,14 @@ for feature_index in range(total_features):
     r2score = r_sqr_score(y,y_pred_single)
     print(f"r square error is {r2score} for {features[feature_index]}")
 
-# Plotting the best fit line for the first feature
+    # Plotting the best fit line for the first feature
 
-#plt.figure(figsize=(8,6))
-#plt.scatter(X_feature, y, color='green', label='Data points')
-#plt.plot(X_feature, y_pred_single, color='red', label='Best fit line')
-#plt.xlabel(features[feature_index])
-#plt.ylabel("Target (y)")
-#plt.title("Linear Regression - One Feature")
-#plt.legend()
-#plt.grid(True)
-#plt.show()
+    plt.figure(figsize=(8,6))
+    plt.scatter(X_feature, y, color='green', label='Data points')
+    plt.plot(X_feature, y_pred_single, color='red', label='Best fit line')
+    plt.xlabel(features[feature_index])
+    plt.ylabel("Target (y)")
+    plt.title("Linear Regression - One Feature")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
