@@ -1,4 +1,3 @@
-import numpy as np
 from sklearn.datasets import fetch_california_housing
 
 def get_data():
